@@ -6,13 +6,27 @@ import java.util.List;
 public class Utas {
 	String név;
 	String telefon;
+	String jelszó;
 	ArrayList<Ut> foglalások;
 	
 	public Utas(String név, String telefon) {
 		this.név = név;
 		this.telefon = telefon;
-		foglalások = new ArrayList<Ut>();
+		this.foglalások = new ArrayList<Ut>();
 	}
+	
+	public Utas(String név) {
+		this.név = név;
+		this.foglalások = new ArrayList<Ut>();
+	}
+	
+	public Utas(String név, String telefon, String jelszó) {
+		this.név = név;
+		this.telefon = telefon;
+		this.jelszó = jelszó;
+		this.foglalások = new ArrayList<Ut>();
+	}
+
 
 	public String getNév() {
 		return név;
@@ -41,6 +55,15 @@ public class Utas {
 	public void setFoglalások(Ut ut) {
 		foglalások.add(ut);
 	}
+
+	public String getJelszó() {
+		return jelszó;
+	}
+
+	public void setJelszó(String jelszó) {
+		this.jelszó = jelszó;
+	}
+	
 	
 	
 	
